@@ -1,0 +1,166 @@
+@CHARSET "UTF-8";
+/* 
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Jua', sans-serif;
+font-family: 'Nanum Pen Script', cursive;
+ */
+
+* {margin: 0;
+   padding: 0;/* CSS 초기화(기본 여백제거) */}
+
+body {font-family: "Nanum Gothic", sans-serif;}
+
+a {text-decoration: none; }
+
+nav a:LINK, nav a:VISITED {
+	color: #fff;}
+nav a:HOVER, nav a:ACTIVE {	
+    color: #ff0;}
+
+h1 {font-size: 1.8em;}
+h2 {font-size: 1.3em;}
+p {font-size: 1.3em;
+line-height: 2.5;}
+li {font-size: 1em;
+line-height: 2;}
+
+ #container {/* border: 1px solid red; */
+  width: 100%;
+  margin: 0 auto;   }
+
+header { width:100%; 
+ height: 300px; 
+ background-image: url("img/header.jpg");
+ background-size: cover;	
+ background-position: center center; }
+
+nav {background-color: rgba(0,0,0,0.8);
+  /* 배경색상에 투명도 추가 a는 alpha. 0~1사이의 값 */
+ height: 50px; }
+
+#main_nav>ul {list-style: none;
+ padding: 10px; }
+
+#main_nav li {
+ display: inline-block; /* 가로 메뉴 형 */
+ margin: 5px 15px;
+ font-size: 0.8em;
+ font-family: "Jua", sans-serif; }
+
+
+
+ /* 모바일 767px이하 */
+ 
+section { width: 100%;
+ padding: 15px 5% 10px 5%; 
+  /* 가로 여백은 너비에 따라 변경, 세로 여백은 고정값  */
+ position: relative;/* 자식을 부모 기준으로
+    자리 잡기 위한 부모의 설정값 */ }
+
+section:NTH-OF-TYPE(2n) {
+/* 주제영역 짝수번째 마다 배경색 변경 */	
+ background-color: #eee;}
+
+.pg_title {position: absolute;/* 자식을 부모 기준으로
+    자리 잡기 위한 자식의 설정값 */ 
+ top:20px;   left: 0;/* 부모 기준으로 해당 방향,값만큼 이동 */
+ padding: 30px 50px;}
+ 
+.pg_title h1 {margin-bottom: 30px;}
+ 
+.content {/* border: 1px solid #f90; */
+  width: 90%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 80px auto 10px; }
+
+.content h2 {color: #0094ff;
+ font-weight: 600;}
+ 
+ .content ol {margin-top: 20px;} 
+
+.photo {display: none; /* <-공간과 요소가 함께 사라짐 */
+  /* visibility: hidden; <-공간은 남기고 요소만 사라짐  */}
+
+ 
+footer {background-color: #000;
+ width: 100%;    height: 100px; }
+
+footer p {color: #fff;
+ text-align: center;
+ line-height: 100px;
+ font-size: 1.5em;
+ font-family: "Nanum Pen Script", cursive;
+ text-transform: capitalize;}
+
+
+
+
+ /* 테블릿 768px이상 */
+
+@media screen and (min-width:768px) {
+
+ header { height: 400px; }	
+ 	
+ section#intro, section#map {
+  border:1px dotted #ccc;
+  float: left;
+  width: 50%;  height: 400px;
+  box-sizing: border-box; }
+ 	
+section#choice {clear: both;}	
+	
+}
+
+
+
+ /* pc 992px이상 */
+@media screen and (min-width:992px) {
+	
+ #container {border: 1px solid #ccc;
+  width: 995px;  }	
+	
+ header { height: 500px; }	
+	
+ section#intro, section#map {
+  width: 100%;  height: 420px;
+  padding: 15px 2% 10px 5%;}	
+	
+ 	
+.photo {display: block; /* 숨겼던 사진을 pc에서만 보임 */}	
+	
+.photo img {width: 100%;
+ max-width:320px; 
+ height: auto;
+ margin-bottom: 30px;
+}	
+	
+.photo,	.text {/* border: 1px solid #f90; */ 
+ float: left;
+ width: 42%; }
+ 
+#choice .photo, #choice .text {
+ float: right;}
+ 
+#choice .photo img {border-radius: 50%;
+ margin-left: 5%;} 
+ 
+ 
+footer {clear: both;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

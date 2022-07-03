@@ -1,0 +1,88 @@
+@CHARSET "UTF-8";
+
+#sec01 img {width:220px;
+	float: left;
+	margin-right: 1em;}
+
+
+#sec02>p {text-align: right;}
+
+#sec02 img {width:220px;
+float: right;
+margin-left: 1em;}
+
+#sec03 {/* height: 700px; */
+overflow: hidden;}
+
+#sec03>p {background-color:#ccc;
+	width: 300px;}
+
+.f-l {float: left;
+margin: 1em;}
+
+
+#sec04 {overflow: hidden;}
+#sec04>p {float: right;
+width: 250px;}
+
+#sec05 {overflow: hidden;}
+#sec05>p {width: 25%;}
+.f-pl {float: left;}
+.f-pr {float: right;}
+
+
+#sec06 {overflow:hidden;
+/* 하위요소들이 float으로 빠져나가서 
+높이값이 줄어든 상위요소의 형태를 되살리기 */ }
+
+#sec06>p {border: 1px solid red;}
+
+.f-p01, .f-p02 {float: left;
+width: 250px;}
+
+.f-p03 {float: right;
+width: 300px;}
+
+
+
+#sec07 {overflow: hidden;}
+
+#sec07>p {border: 1px solid red;}
+
+.f-p04 {float: left;
+width: 350px;}
+
+.f-p05, .f-p06 {float: right;
+width: 200px;}  
+
+.f-p06 {margin-right: 1em;}
+
+.f-p07 {border: 1px solid blue !important;
+             /* !important을 추가하면 해당 값이 
+                       스타일적용우선순위가  가장 높아짐 */
+ clear: both
+ /* float의 영향을 해제 (제자리로 보냄)*/;} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

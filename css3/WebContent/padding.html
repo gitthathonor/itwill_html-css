@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>padding</title>
+<link href="style.css" rel="stylesheet">
+<link href="padding.css" rel="stylesheet">
+</head>
+<body>
+<h1>padding 테두리 내부의 여백</h1>
+
+<h2>padding의 방향별 적용법</h2>
+<ul id="pd">
+ <li class="pt">padding-top:n; 위쪽에 n만큼 내부여백 적용</li>
+ <li class="pr">padding-right:n; 오른쪽에 n만큼 내부여백 적용</li>
+ <li class="pb">padding-bottom:n; 아래쪽에 n만큼 내부여백 적용</li>
+ <li class="pl">padding-left:n; 왼쪽에 n만큼 내부여백 적용</li>
+</ul>
+
+<input type="text" value="padding" class="pl01">
+
+<h2>padding의  갯수별 적용법</h2>
+<ul id="pd2">
+ <li class="pn01">padding:n; 양사방 모두 n으로 동일</li>
+ <li class="pn02">padding:n n; 상하, 좌우 순서로 서로 동일</li>
+ <li class="pn03">padding:n n n; 상, 좌우 동일, 하 순서로 적용</li>
+ <li class="pn04">padding:n n n n; 상, 우, 하, 좌의 순서로 적용</li>
+</ul>
+
+
+<input type="text" value="padding: 0.5em;" class="in01">
+<input type="text" value="padding: 0.5em 0.8em;" class="in02">
+<input type="text" value="padding:6px 14px 8px 12px;" class="in03">
+
+<p>img에 padding과 기타 속성 응용시 <br>
+  * border-radius:n;  모서리 라운딩 효과<br>
+ <img src="img/pic_trulli.jpg" title="padding:14px;" class="ph01">
+ <img src="img/pic_trulli.jpg" title="padding:14px 12px 150px;" class="ph02">
+ <img src="img/pic_trulli.jpg" title="padding:14px 12px 150px;" class="ph03">
+ <img src="img/pic_trulli.jpg" title="padding:20px;border-radius:50%;"  class="ph04"> 
+</p>
+
+<nav>
+ <a href="#">1</a>
+ <a href="#">2</a>
+ <a href="#">3</a>
+ <a href="#">4</a>
+ <a href="#">5</a>
+ <a href="#">6</a>
+ <a href="#">7</a>
+ <a href="#">8</a>
+ <a href="#">9</a>
+ <a href="#">10</a>
+</nav>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

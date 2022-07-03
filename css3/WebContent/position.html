@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position</title>
+<link href="style.css" rel="stylesheet">
+<link href="position.css" rel="stylesheet">
+</head>
+<body>
+<h1>position 요소의 위치 지정법 지정</h1>
+
+<ul>
+ <li>position:static; (기본값) 고정.</li>
+ <li>position:relative; 현재 위치에서 ~ 로 이동</li>
+ <li>position:absolute; 상위요소를 기준으로 ~ 이동</li>
+ <li>position:fixed; 브라우저를 기준으로 ~에 고정</li>
+ <li>position:sticky; 특정위치에서 부터 ~에 고정</li>
+</ul>
+
+<aside>
+ <h3>z-index:n; 겹친 요소의 위아래값 변경</h3>
+ <p>
+     z-index값은 태그 추가시 1씩 자동 증가함.
+   요소들이 겹칠 때 상대적으로 해당 값이 클수록 위로 올라옴. 
+   변경을 원하면 값을 조정(음수도 가능)
+ </p>
+</aside>
+
+<section id="sec04">
+ <h2>position:sticky;  특정위치에서 부터 ~에 고정</h2>
+  
+  <p class="stc01">position:sticky;<br> 
+   relative와 fixed의 믹스.
+   (적용대상은 body이외의 상위요소가 없어야 함)
+  </p>
+</section>
+
+
+
+ 
+<section id="sec01">
+ <h2>position:static; (기본값) 고정</h2>
+ 
+ <p class="st01">position:static;<br>left: 600px;</p>
+</section>
+
+<section id="sec02">
+ <h2>position:relative; 현재 위치에서 ~로 이동</h2>
+ 
+ <p class="re01">position:relative;<br>
+  left: 600px;</p>
+ <p class="re02">position:relative;<br>
+  top: 100px;</p>
+ <p class="re03">position:relative;<br>
+  right: 300px;</p>
+ <p class="re04">position:relative;<br>
+ bottom: 150px;</p>
+ <p class="re05">position:relative;<br>
+ left: 300%; bottom: 100%;</p>
+ <p class="re06">position:relative;<br>
+ right: 50px; top:100%;
+ </p>
+</section>
+
+<section id="sec03">
+ <h2>position:absolute; 상위요소를 기준으로 ~ 이동
+  <span>(★ 상위요소는 position: relative;로)</span>
+ </h2>
+  
+ <p class="ab01">position:absolute;<br>
+   left:600px;</p>
+ <p class="ab02">position:absolute;<br>
+  right: 100px;</p>
+ <p class="ab03">position:absolute;<br>
+  top:10px;</p>
+ <p class="ab04">position:absolute;<br>
+  bottom: 10px;</p>
+ <p class="ab05">position:absolute;<br>
+  right: 0;  bottom: 0;</p>
+ <p class="ab06">position:absolute;<br>
+  left: 50%; top:50%; </p>
+ <p class="ab07">position:absolute;<br>
+  left: 300px; bottom: 500px;</p>
+  
+  <div id="box">
+   <div class="div01">div01</div>
+   <div class="div02">div02</div>
+   <div class="div03">div03</div>
+   <div class="div04">div04</div>
+  </div>
+</section>
+
+
+<nav id="quick">
+<!-- position:fixed; 
+  브라우저를 기준으로 ~에 고정 -->
+ <ul>
+  <li><a href="#sec01">position:static;</a></li>
+  <li><a href="#sec02">position:relative;</a></li>
+  <li><a href="#sec03">position:absolute;</a></li>
+  <li><a href="#">top</a></li>
+ </ul>
+</nav>
+
+
+
+
+</body>
+</html>
+
+
+
+

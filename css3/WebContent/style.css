@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+
+ /* style.css 파일은 수업시간 공용 */
+h1 {background-color: #aaa;
+ border-left:10px solid #455;
+ color: #fff;
+ padding: 0.4em;
+ font-family: "나눔 명조", serif;}
+
+h2 {border-bottom: 4px solid;
+ color: #455;	}
+
+section {border: 3px dashed #ccc; 
+margin-bottom: 4em;
+padding: 1em;	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>header</title>
+<style type="text/css">
+  #search {/*  지시사항 1 작성 */
+  	position: absolute;
+  	top :65px;
+  	left :1357.5px;
+  }
+  ul {list-style: none;
+  padding: 8px;}
+ 
+  nav {clear: both;
+  background-color: #ccc;
+  height: 100px;}
+ 
+  nav>ul>li {display: inline-block;
+  vertical-align: top;
+  width: 100px;}
+ 
+  nav a {color: #333;
+  text-decoration: none;}
+ 
+  #sub {/* 지시사항2 작성 */
+  display: none;
+  font-size: 0.8em;}
+ 
+  .mn02:HOVER>#sub /* 지시사항3 작성  */ {
+  	display: list-item;
+        /* 지시사항3 작성  */
+  }
+</style>
+</head>
+<body>
+
+<h1>logo</h1>
+<input type="search" id="search" value="search">
+  <nav>
+  <ul>
+  <li><a href="#">menu01</a></li>
+  <li class="mn02"><a href="#">menu02</a>
+    <ul id="sub">
+    <li><a href="#">sub01</a></li>
+    <li><a href="#">sub02</a></li>
+    <li><a href="#">sub03</a></li>
+    </ul>
+  </li>
+  <li><a href="#">menu03</a></li>
+  <li><a href="#">menu04</a></li>
+  </ul>
+</nav>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>text- 로 시작하는 글자 속성들</title>
+<link href="text.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<h1>text- 로 시작하는 글자 속성들 </h1>
+
+<ol>
+ <li>text-align: ; 글자 수평 정렬</li>
+ <li>text-decoration: ; 글자 여러 줄들</li>
+ <li>text-indent: ; 글자 들여쓰기</li>
+ <li>text-transform: ; (영문) 대소문자 변경</li>
+ <li>text-shadow: ; 글자의 그림자 </li>
+ <li>text-overflow: ;  </li>
+</ol>
+
+<section id="sec01">
+ <h2>text-align: ; 글자 수평 정렬</h2>
+ * tag영역 자체가 움직이지 않음(영역 내에서 글자의 위치가 변동)
+ <p class="tal01">text-align:left; 글자 수평 정렬</p>
+ <p class="tal02">text-align:center; 글자 수평 정렬</p>
+ <p class="tal03">text-align:right; 글자 수평 정렬</p>
+ <p class="tal04 tin02">text-align:justify; 양끝 정렬 Lorem ipsum dolor sit amet,
+			consectetur adipiscing elit. Nam hendrerit dui erat, vitae volutpat
+			quam rhoncus id. Nullam scelerisque fringilla tortor eget faucibus.
+			Maecenas tristique iaculis fringilla. Pellentesque vulputate rutrum
+			tortor, ut scelerisque ipsum dignissim nec. Fusce semper aliquet
+			massa, sit amet tempus erat pulvinar eget. Duis non augue nec odio
+			scelerisque cursus vitae sed tortor. Donec lobortis sapien non magna
+			maximus pharetra. Mauris nunc quam, commodo quis risus eget, placerat
+			placerat dui. Sed pretium velit in libero tincidunt, non porta turpis
+			dignissim. Aliquam vitae commodo orci, id consectetur ex. Integer nec
+			erat sem. Class aptent taciti sociosqu ad litora torquent per conubia
+			nostra, per inceptos himenaeos. Morbi tempus egestas nibh in
+			tristique. 하나에 라이너 잠, 까닭입니다. 헤일 마리아 별이 어머니 봅니다. 시와 헤는 새워 이름과, 지나고 된
+			봅니다. 이름을 아이들의 이름과, 이 어머님, 다하지 하나에 까닭입니다. 위에도 이름자를 겨울이 까닭입니다. 많은 된
+			새겨지는 헤일 속의 불러 다 슬퍼하는 있습니다. 아침이 노새, 자랑처럼 위에 별에도 시인의 위에 별 이웃 듯합니다. 이제
+			어머니 자랑처럼 당신은 별을 겨울이 릴케 계십니다. 자랑처럼 사랑과 지나가는 별 까닭이요, 릴케 했던 소학교 보고,
+			있습니다. 벌써 별빛이 나의 까닭입니다.</p>
+  
+  <h3>무의미한  텍스트를 생성</h3>
+   <a href="https://www.lipsum.com/" target="_blank">
+   https://www.lipsum.com/</a> 
+   <a href="http://hangul.thefron.me/" target="_blank">
+   http://hangul.thefron.me/</a>  
+   
+   <table id="tal-tb">
+    <tr>
+     <th class="tb-l">left</th>
+     <th>center</th>
+     <th class="tb-r">right</th>
+    </tr>
+    <tr>
+     <td>td </td>
+     <td class="tb-cb">td <br>
+       (class하나에 속성 두가지를 적용)
+     </td>
+     <td class="tb-c fw-b">td <br>
+      (class두가지를 조합하여 적용)
+     </td>
+    </tr>
+    <tr>
+     <td class="tb-l">left</td>
+     <td class="tb-c">center</td>
+     <td class="tb-r">right</td>
+    </tr>
+   </table>  
+   
+   <input type="text" value="text-align" class="tb-c">
+    
+</section>
+
+<section id="sec02">
+ <h2>text-decoration: ; 글자 여러 줄들</h2>
+ 
+ <p class="tde01">text-decoration:overline; 글자 윗줄</p>
+ <p class="tde02">text-decoration:line-through; 글자 가로지르는 줄</p>
+ <p class="tde03">text-decoration:underline; 글자 밑줄</p>
+ <p> text-decoration:
+ <a href="#" class="tde04">none</a>; 글자줄 없음</p>
+</section>
+
+<section id="sec03">
+ <h2>text-indent:n; 글자 들여쓰기 (음수가능,첫 줄에만 적용됨)</h2>
+ <p class="tin01">text-indent:1em; 글자 들여쓰기</p>
+ <p class="tin02">text-indent:16px; 글자 들여쓰기</p>
+ <p class="tin03">text-indent:7%; 글자 들여쓰기</p>
+ <p class="tin04">text-indent:-150px; 글자 들여쓰기(음수가능)</p>
+ <p class="tin05">text-indent: ; 글자 들여쓰기</p>
+</section>
+
+
+<section id="sec04">
+ <h2>text-transform: ; (영문) 대소문자 변경</h2>
+ 
+ <p class="ttr01">tEXt-traNsForm: nONe; 대소문자 변경 없음</p>
+ <p class="ttr02">tEXt-traNsForm: loWErcAsE; 전체를 소문자로 변경</p>
+ <p class="ttr03">tEXt-traNsForm: upPErcAsE; 전체를 대문자로 변경</p>
+ <p class="ttr04">tEXt-traNsForm: caPItalIZe; 
+    첫글자만 대문자로 변경 (단어 단위)</p>
+</section>
+
+<section id="sec05">
+ <h2>text-shadow:n n n n; 글자의 그림자</h2>
+ 그림자의 x방향거리값 | 그림자의 y방향거리값 | 퍼짐정도 | color 의 순서
+ <p class="tsh01">text-shadow: 2px 3px 4px #333; 글자의 그림자</p>
+ <p class="tsh02">text-shadow: -2px -3px 4px #333; 글자의 그림자</p>
+ <p class="tsh03">text-shadow: 0 0 6px #aaffda; 글자의 그림자</p>
+ <p class="tsh04">text-shadow: ; 글자의 그림자</p>
+ <p class="tsh05">text-shadow: ; 글자의 그림자</p>
+ <p class="tsh06">text-shadow: ; 글자의 그림자</p>
+</section>
+
+<section id="sec06">
+ <h2>text-overflow: ;</h2>
+
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="test.jsp" method="post">
+
+
+
+<button>ok</button>
+<button type="reset">no</button>
+
+<h3>select - 객관식. 한줄짜리 펼침목록.(드롭다운 리스트)</h3>
+
+<h3>select의 option에 selected 지정. </h3>
+<p>특정 option을 초기값으로 설정.</p>
+<select>
+ <option>opt01</option>
+ <option>opt02</option>
+ <option selected="selected">selected</option>
+ <option>opt04</option>
+ <option>opt05</option>
+ <option>opt06</option>
+</select>
+
+<h3>select에 size="n" 지정 (n개의 항목이 보이는 상자형)</h3>
+
+<select size="4">
+ <option>opt01</option>
+ <option>opt02</option>
+ <option>size="4"</option>
+ <option>opt04</option>
+ <option>opt05</option>
+ <option>opt06</option>
+</select>
+
+<h3>select에  multiple지정 (다중선택 가능)</h3>
+<p>상자형으로 바뀜. 다중선택시 ctrl키나 shift를 누르고 선택</p>
+<select multiple="multiple">
+ <option>opt01</option>
+ <option>opt02</option>
+ <option>multiple</option>
+ <option>opt04</option>
+ <option>opt05</option>
+ <option>opt06</option>
+</select>
+
+<h3>optgroup으로 여러 option들을 그룹화하기 </h3>
+<p>서로 연관(공통사항)있는 option들을  optgroup으로 묶고 <br>
+ optgroup에 label속성으로 해당 그룹의 주제(제목)를 표현.</p>
+<p>팀 회의 희망 시간은?
+<select>
+ <optgroup label="오전">
+  <option>1교시</option>
+  <option>2교시</option>
+  <option>3교시</option>
+  <option>4교시</option>
+ </optgroup>
+ <optgroup label="오후">
+  <option>5교시</option>
+  <option>6교시</option>
+  <option>7교시</option>
+  <option>8교시</option>
+ </optgroup>
+</select>
+</p>
+
+<h5>문제. optgroup</h5>
+<select size="4">
+ <optgroup label="커피">
+  <option>아메리카노</option>
+  <option>카푸치노</option>
+  <option selected>카페라떼</option>
+ </optgroup>
+ <optgroup label="기타음료">
+  <option>코코아</option>
+  <option>유유</option>
+ </optgroup>
+</select>
+
+
+
+
+
+<h2>label(input의 설명문)과 input</h2>
+1. <label>name<input type="text"> </label> <br>
+2. <label for="nm">name</label> <input type="text" id="nm">  <br>
+ <p>
+  <b>label의 for="*"의 값</b>과 
+  <b>input의 id="*"의 값을 서로 일치</b>시켜서 연결함.
+ </p>
+
+<hr>
+<h1>html5에서 추가된 input type의 값들</h1>
+
+<h2>input type="time" 날짜나 시간 (오전/오후 시 분)</h2>
+  <input type="time">시분
+<h2>input type="date" 날짜나 시간 (연월일)</h2>
+  <input type="date">연월일  <br>
+  <label for="bday">Birthday</label> 
+   <input type="date" min="1900-01-01" max="2200-12-31" id="bday">
+  
+<h2>input type="datetime-local" 날짜나 시간 (연월일 오전/오후 시 분)</h2>
+ <input type="datetime-local">연월일시분
+ 
+<h2>input type="week" 날짜나 시간 (연주)</h2> 
+ <input type="week"> 연주 
+ 
+<h2>input type="month" 날짜나 시간 (연월)</h2>
+ <input type="month"> 연월
+
+<h2>input type="number" 숫자</h2>
+<p>
+ <input type="number"> 숫자형식의 데이터 (증감버튼 생성) <br>
+ <input type="number" min="0"> min="0" 로 최소값 지정 <br>
+ <input type="number" max="100"> max="100" 로 최대값 지정 <br>
+ <input type="number" step="5"> step="5" 로 증감간격 지정  
+</p>
+
+<h2>input type="range" 범위내의 값 </h2>
+ <input type="range">
+
+<h2>input type="tel" 연락처 (전화번호)</h2>
+ <input type="tel"> 전화번호 형식의 데이터(모바일브라우저에서 가상키패드 변동, 전화걸기 가능)
+
+<h2>input type="email" 연락처 (email주소)</h2>
+ <input type="email"> email형식의 데이터(브라우저에서 email형식이 맞는지 체크해줌 @유무 등)
+
+<h2>input type="url" 연락처 (웹주소,url주소)</h2>
+ <input type="url"> 웹주소(url)형식의 데이터(브라우저에서  url형식이 맞는지 체크해줌. 프로토콜 유무)
+
+<h2>input type="color" 컬러값 </h2>
+ <input type="color"> <br>
+
+<h2>input type="search" 검색용 상자</h2>
+<input type="search">  
+
+<hr>
+<h2>input type="file" 파일 전송용</h2>
+<input type="file">
+
+ <hr>
+ <button>알따</button>
+</form>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+
+ /* 1. text-align 글자 수평 정렬 */
+.tal01, .tal02, .tal03 {
+	 /* [그룹선택자]
+ 여러선택자들을 쉼표로 불러와서 같은
+ 속성을 적용함
+ (선택자 종류가 서로 달라도 가능) */
+background-color: #3ce;	
+width: 400px;} 
+
+.tal01 {text-align: left; }
+.tal02 {text-align: center;}
+.tal03 {text-align: right;}
+.tal04 {text-align: justify;}
+
+ /* (주의) 1. 평상시가 반드시 있어야하고
+  소스순서도  2. 변화시보다 먼저라야 함 */
+a:LINK, a:VISITED {
+/* 1. 링크태그 a의 평상시 상태 지정 
+  ( :LINK는 초기링크, :VISITED는 방문한링크)*/
+background-color:#aef;
+padding:0.25em;	
+color: #456;}
+
+a:HOVER, a:ACTIVE {
+/* 2. 링크태그 a의 변화시 상태 지정 
+ ( :HOVER는 마우스오버시, :ACTIVE는 활성화링크)*/
+background-color:#456;
+color: #aef;}
+
+
+
+
+#tal-tb {border: 1px solid;
+width: 600px;
+height: 100px;
+margin-top: 3em;}
+
+th {border: 1px solid #f00;}
+td {border: 1px solid #0d0;}
+
+.tb-l {text-align: left;}
+.tb-c {text-align: center;}
+.tb-r {text-align: right; }
+
+.tb-cb {
+ text-align: center;
+ font-weight: bold;}
+
+.fw-b {font-weight: bold;}
+
+
+
+
+
+
+/* 2. text-decoration 글자 줄들 */
+
+.tde01 {text-decoration: overline;}
+.tde02 {text-decoration: line-through; }
+.tde03 {text-decoration: underline; }
+.tde04 {text-decoration: none;
+ /* 링크의 밑줄을 없앨 때 a태그에 직접 적용해야함 */}
+
+
+
+ /* 3. text-indent 글자 들여쓰기  */
+.tin01 {text-indent: 1em;}
+.tin02 {text-indent: 16px;}
+.tin03 {text-indent: 7%;
+background-color: #cce;}
+.tin04 {text-indent: -150px;}
+.tin04:HOVER {text-indent: 0;}
+
+
+/* 4.text-transform 
+    영문 대소문자 변경 */
+
+.ttr01 {text-transform: none;}
+.ttr02 {text-transform: lowercase;}
+.ttr03 {text-transform: uppercase;}
+.ttr04 {text-transform: capitalize;}
+
+
+
+/* 5.text-shadow 글자그림자 */
+
+ #sec05>p {
+ /* A>B는 부모자식관계선택자.
+ 상위요소 A의 바로 한단계 아래에 하위요소 B가
+ 있는 경우 적용됨. 
+--------------------------
+ A B는 조상자손관계선택자.
+ 상위요소 A의 아래에 있는 
+  모든 하위요소 B에 적용됨.  */
+ font-size: 3em;
+ font-weight: bold;}
+ 
+.tsh01 {text-shadow: 2px 3px 4px #333;}
+.tsh02 {text-shadow: -2px -3px 4px #333;} 
+.tsh03 {padding:0.6em;
+background-color: #000;	
+text-shadow: 0 0 6px #aaffda;} 
+.tsh03:HOVER {
+text-shadow: 0 0 12px #aadaff;
+transition:1.5s;} 
+
+
+
+/* 6.text-overflow */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

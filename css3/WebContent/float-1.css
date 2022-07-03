@@ -1,0 +1,90 @@
+@CHARSET "UTF-8";
+
+.clear {clear: both;}
+
+header {border:1px solid red;
+	height: 200px;}
+
+#logo {border:1px solid blue;
+ float: left;
+ margin-left:50px; }
+ 
+#sch {border:1px solid skyblue;
+ float: right;
+ margin-right: 10px;
+ margin-top: 20px;}
+
+#mn {border:1px solid orange;
+clear: both /* float의 영향을 해제하여
+제자리로 보냄 */;
+overflow: hidden;
+margin-left: 100px;}
+
+#mn>ul {border:1px solid navy;
+	list-style:none;/* 
+  목록 앞의 기본 모양 제거 */
+   float: right /* 우측메뉴 구현시 추가 */; } 
+
+#mn li /* = #mn>ul>li */
+ {border:1px solid green;
+ float: left /* 개별 메뉴들을 나란히 배치 */;
+ margin-right: 10px;}
+ 
+#mn a {border:2px solid pink;
+ text-decoration: none
+  /* 링크걸린 글자의 밑줄제거 */;
+ text-transform: uppercase;}
+
+#mn a:LINK, #mn a:VISITED {
+ color: #333; }
+#mn a:HOVER, #mn a:ACTIVE {
+ color: #a30;}
+
+
+  /* 중앙메뉴 구현 */
+#mn2>ul {border: 1px solid #7f0;
+	list-style: none;
+	width: 400px;
+	margin: 0 auto /* 
+ 좌우 margin값을 항상 같게(auto)하여 
+ 정중앙으로 배치 */;}	
+	
+#mn2 li {border: 1px solid #f70;
+float: left /* 개별 메뉴들을 나란히 배치 */; }
+
+#mn2>ul>li>a {text-decoration: none;
+ padding: 8px 12px;}
+
+#mn2 a:LINK, #mn2 a:VISITED {
+ background-color: #e5a;
+ color: #5ea;}
+
+#mn2 a:HOVER, #mn2 a:ACTIVE {
+ background-color: #5ea;
+ color: #e5a;}
+
+section {background-color: #ccc;
+float: left;}
+
+#sec01 {width: 25%;
+ height: 400px;
+ margin-right: 1%;} 
+#sec02 {width: 30%;
+ height: 400px;}
+
+aside {border: 4px dashed #060;
+ width: 100px;
+ height: 300px;
+ float: right;}
+
+footer {clear: both;}
+
+
+
+
+
+
+
+
+
+

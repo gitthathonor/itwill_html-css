@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form-2</title>
+</head>
+<body>
+<h1>html5에서 추가된 input type의 속성들</h1>
+<form action="test.jsp" method="post">
+
+<label for="id">ID</label> 
+<input type="text" maxlength="8" id="id"> maxlength="n"로 입력값의 최대치 지정<br>
+<input type="text" minlength="2"> minlength="n"로 입력값의 최소치 지정
+
+<ul>
+ <li><input type="text" autofocus="autofocus"> autofocus 해당 요소에 자동포커싱</li>
+ <li><input type="text" autocomplete="on"> 
+   autocomplete="on/off" 자동완성 기능을 켬/끔</li>
+ <li><input type="text" placeholder="영문숫자특수문자조합8자이내">
+   placeholder="..." 입력예시나 설명문 등을 보여줌</li>
+ <li><input type="text" required="required"> required 필수입력요소로 지정</li>
+ <li><input type="text" readonly="readonly" value="silver"> 
+   readonly 읽기만 가능한 요소로 지정</li>
+ <li><input type="text" disabled="disabled" value="silver">
+   disabled 사용불가한 요소로 지정</li>
+</ul>
+
+ <hr>
+ <h2>textarea ... /textarea 큰 글상자</h2>
+ <textarea rows="6" cols="70">자기소개를 해주세요.
+  rows="n" cols="n"로 n줄짜리, n개의 글자 입력 가능한 크기로 지정
+ </textarea>
+
+
+
+ <hr>
+  <input type="submit"> <input type="reset">
+</form>
+
+</body>
+</html>
+
+
+
+
+

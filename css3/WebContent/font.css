@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+
+body {font-family: 'Nanum Gothic', sans-serif;}
+
+
+/* 링크 상태지정시 순서를 지키기
+(LINK와 VISITED를 먼저 쓰고 생략하지 말 것) */
+a:LINK, a:VISITED {
+/* 평상시 링크 상태(초기,방문한) 지정 */
+	color: #730;}
+a:HOVER, a:ACTIVE {
+/* 변화시 링크 상태(마우스오버시,누르는동안) 지정 */
+	color: #5a4;
+	font-style: italic;}
+	
+
+  /* 1. font-size */
+#fs-box {font-size:20px;
+background-color: #ccc;}
+
+.fs-01 {font-size:16px; }
+.fs-02 {font-size:12px;}
+.fs-03 {font-size:20px;}
+.fs-04 {font-size:1em;}
+.fs-05 {font-size:0.75em;}
+.fs-06 {font-size:1.25em;}
+.fs-07 {font-size:1rem;}
+.fs-08 {font-size:0.75rem;}
+.fs-09 {font-size:1.25rem;}
+
+
+ /* 2.font-weight 글자 두께 */
+.fw-01 {font-weight: 100;}
+.fw-02 {font-weight: 200;}
+.fw-03 {font-weight: 300;}
+.fw-04 {font-weight: 400;}
+.fw-05 {font-weight: 500;}
+.fw-06 {font-weight: 600;}
+.fw-07 {font-weight: 700;}
+.fw-08 {font-weight: 800;}
+.fw-09 {font-weight: 900;}
+.fw-10 {font-weight: bold;}
+.red {color: red;}
+.fw-11 {
+font-weight: normal;}
+
+
+
+/* 3.font-style 글자 기울기 */
+.fst-01 {font-style: italic;
+ color: red;}
+.fst-02 {font-style: oblique;}
+.fst-03 {font-style: normal;}
+
+
+ /* 4.font-family 글꼴(서체) */
+.fm01 {
+font-family: "Garamond", "Georgia", "Times New Roman", serif;}
+.fm02 {font-family: "Verdana", "Arial", sans-serif;}
+
+.fm03 {font-family: 'Gaegu', cursive;}
+.fm04 {font-family: 'Song Myung', serif;}
+/* https://fonts.google.com/
+font-family: 'Gaegu', cursive;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Song Myung', serif;
+*/
+
+
+/* 링크 상태에 따른 색상 지정 
+a:LINK {color: #555;}
+a:VISITED {color:#7cf;}
+a:ACTIVE {color: #dd0;}
+a:HOVER {color:#f90; }
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

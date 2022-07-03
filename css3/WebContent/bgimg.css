@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+
+body {font-size:1.2em;
+line-height:1.8;
+background-image: url("img/pic_trulli.jpg"), url("img/cat.jpg") ;
+background-repeat: no-repeat;
+background-position: 0 center, 100% center;
+/* background-size: cover; */
+background-attachment: fixed, scroll;}
+
+h2 {margin-top: 5em;}
+
+li {margin-bottom: 1.5em;}
+
+.li-im {list-style: url("img/gif/face.gif")
+/* 목록 앞의 모양을 이미지로 지정 */;}
+
+
+.li-bg {list-style: none /* 목록 앞의 기본모양 제거 */;}
+.li-bg>li { /* 개별 목록마다 배경이미지를  목록앞의 이미지로 등록 */
+background-image: url("img/gif/arrow.gif");
+background-repeat: no-repeat /* 이미지 하나만 남김 */;
+background-position:0 10px /* 수직방향 이미지 위치 조절 */; 
+padding-left: 1em /* 글자와 겹친 이미지를 분리 */; }
+
+
+.pre {white-space: pre
+/* 글자의 공백 처리 - 그대로 */;
+background-color: #ccc;
+width:400px;
+padding: 1em;}
+
+
+
+#sec01>p {
+ background-image:url("img/green.jpg");
+ width:30%;
+ height: 300px;	
+ display: inline-block
+ /* 나란히 배치 */;
+ margin-left:2%;
+ overflow: scroll
+ /* 영역밖의 내용을 스크롤바 처리 */;}
+
+.att01 {
+background-attachment: scroll;}
+.att02 {
+background-attachment: fixed;}
+.att03 {
+background-attachment: local;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

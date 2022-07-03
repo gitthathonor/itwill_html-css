@@ -1,0 +1,78 @@
+@CHARSET "UTF-8";
+/*
+
+* {margin: 0;
+   padding: 0; 
+--- css초기화 .
+    모든 요소의 안밖여백을 0으로 지정.
+  (*는 전체선택자. 모든 요소를 다 지칭)
+ }
+ 
+ * /
+
+
+
+#log {margin-left: 300px;
+margin-top: 2em;}
+
+
+ /* margin의 방향별 적용 */
+#mdr>li {/* A>B 부모자식관계의 선택자 */
+ border: 1px solid #47a;}
+
+.mt {margin-top: 50px;}
+.mr {margin-right: 15%;}
+.mb {margin-bottom: 3em;}
+
+
+.ml {margin-left: 20%;}
+
+
+
+ /* margin의 갯수별 적용  */
+
+ #mn>li {border: 1px solid #a00;}
+
+ #mn>li:NTH-OF-TYPE(1) {
+	margin: 100px;}
+#mn>li:NTH-OF-TYPE(2) {
+	margin: 50px 20%; }
+#mn>li:NTH-OF-TYPE(3) {
+margin: 50px 10% 80px;}
+
+#mn>li:NTH-OF-TYPE(4) {
+	margin: 20px 6em 7em 10%;}
+
+
+.cnt {
+background-color: #0a7;
+width: 30%;
+margin-left: auto;
+margin-right:auto;
+margin: auto;
+margin: 0 auto;	
+white-space: pre;/* 글자의 공백처리
+-소스 그대로 살리기(pre태그와 동일) */}
+
+#a-box {margin-top: 50px;}
+
+#a-box>a {background-color: #6ae;
+width: 100px;height: 50px;
+padding: 20px;
+margin: 50px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

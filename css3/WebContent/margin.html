@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>margin</title>
+<link href="style.css" rel="stylesheet">
+<link href="margin.css" rel="stylesheet">
+</head>
+<body>
+
+ <form action="t.jsp" id="log">
+  <input type="text" placeholder="id">
+  <input type="password" placeholder="password">
+ </form>
+
+<h1>margin 테두리 외부의 여백</h1>
+
+<h2>margin의 방향별 적용법</h2>
+<ul id="mdr">
+ <li class="mt">margin-top:n; 위쪽에 n만큼  외부여백 적용</li>
+ <li class="mr">margin-right:n; 오른쪽에 n만큼  외부여백 적용</li>
+ <li class="mb">margin-bottom:n; 아래쪽에 n만큼  외부여백 적용</li>
+ <li class="ml">margin-left:n; 왼쪽에 n만큼 외부여백 적용</li>
+</ul>
+
+<h2>margin의 갯수별 적용법</h2>
+<ul id="mn">
+ <li>margin:n; 양사방 모두 n으로 동일</li>
+ <li>margin:n n; 상하,좌우 순서로 서로 동일</li>
+ <li>margin:n n n; 상,좌우 동일,하 순서로 적용</li>
+ <li>margin:n n n n; 상,우,하,좌의 순서로 적용</li>
+</ul>
+
+<p class="cnt">
+     [ 항상 center에 위치하는 요소 ]
+     
+ 1. margin-left: auto;
+        &amp;
+    margin-right:auto;     
+                             or
+ 2. margin: auto;          or
+ 3. margin: n auto;
+ 
+ * 좌우 마진이 항상 같은 값으로 적용=auto
+ </p>
+<p class="cnt">
+ center</p>
+
+<div id="a-box">
+ <a href="#">a-01</a>
+ <a href="#">a-02</a>
+ <a href="#">a-03</a> <br>
+ 
+ * a태그는 줄이 안바뀌는(한 줄에 나란히 오는) inline요소이므로
+ margin속성이 상하는 적용 불가함. <br>
+  좌우는 인접요소와 각각 값이 더하기 적용 됨.<br>
+ (크기 속성  width/height도 적용 불가.)
+</div>
+
+</body>
+</html>
+
+
+
+
+
+

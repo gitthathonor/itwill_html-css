@@ -1,0 +1,91 @@
+@CHARSET "UTF-8";
+nav>ul>li {
+border: 1px solid red;
+display: inline-block;
+vertical-align:top/* 
+ inline요소들끼리 수직정렬-위로 */; }
+
+#sub {display: none;}
+#mn04:HOVER>#sub {
+display: block;} 
+
+
+ /* 1.display:inline; block요소를 inline으로  */
+.bl {background-color: #3af;
+width: 300px; height: 50px;
+margin: 30px;
+display: inline;}
+
+#sec01:HOVER>.bl {/* A:HOVER>B
+ A요소에 마우스오버시 자식요소 B의 변화를 지정*/
+	display: block;}
+
+
+ /* 2.display:block; inline요소를 block으로 */
+.in {background-color: #a3f;
+width: 300px; height: 50px;
+margin: 30px;
+display: block;}
+
+#sec02:HOVER>.in {display: inline;}
+
+
+/* 3. display:inline-block; 
+   inline과 block을 합친 성격으로*/
+
+#sec03>*:NOT(h2) {/* A:NOT(B) 선택자는
+ A중에서 B만 제외한 부정선택자 */
+	background-color: #acc;
+	width: 250px; height: 120px;
+	margin: 50px;
+	display: inline-block;}
+
+
+ /* 4.display:none; 화면에서 숨김 */
+
+#sec04>p {border: 5px dotted #f00;
+display: none; }
+
+#sec04:HOVER>p {display: block;}
+
+
+#sec04>b {border: 6px double #f00;
+display: none;}
+
+#sec04:HOVER>b {
+ display: inline;}
+
+
+
+ /* 5. visibility:hidden; 
+      화면에서 숨김 */
+
+#sec05>p {border: 5px dotted #f00;
+ visibility:hidden; }
+ 
+#sec05:HOVER>p {
+ visibility: visible;} 
+
+#sec05>b {border: 6px double #f00;
+visibility: hidden;}
+
+#sec05:HOVER>b {
+ visibility: visible;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

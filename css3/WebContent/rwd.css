@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+
+body {
+ font-size: 14px;
+ font-family: sans-serif;
+ line-height: 1.8; 	
+}
+
+section {
+border: 4px double #999;	
+padding: 1em;
+background-color: #0ea;}
+
+#mq, #m-type {
+ white-space: pre;	}
+
+
+/*  */
+@media screen and (min-width:760px) {
+section {background-color: #aea;}	
+}
+
+
+@media screen and (min-width:1000px) {	
+section {background-color: #ea0;}		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
